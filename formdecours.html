@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <style>
+h1 {
+    color: white;
+    animation: text-shadow 30s ease-in-out infinite;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+h1:hover {
+    animation-play-state: paused;
+}
+
+a {
+    color: #024794;
+}
+
+a:hover {
+    text-decoration: none;
+}
+@keyframes text-shadow {
+    0% {  
+        transform: translateX(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 black, 
+            0 0 0 gray, 
+            0 0 0 green;
+    }
+
+    20% {  
+        transform: translateX(-1em);
+        text-shadow: 
+            0 0.125S 0 #0c2ffb, 
+            0 0.25S 0 black, 
+            0 -0.125S 0 gray, 
+            0 -0.25em 0 green;
+    }
+
+    40% {  
+        transform: translateX(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 black, 
+            0 0.0625em 0 gray, 
+            0 0.125em 0 green;
+    }
+    
+   60% {
+        transform: translateX(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 black, 
+            0 -0.03125em 0 gray, 
+            0 -0.0625em 0 green;
+    }
+
+    80% {  
+        transform: translateX(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 black 
+            0 0 0 gray, 
+            0 0 0 green;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    } }
+
+        body{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: black;
+        }
+        input{
+            width: 50%;
+        }
+        select{
+            width: 50.5%;
+        }
+        textarea{
+            width: 50%;
+        }
+        form{
+            border: 30px gray double;
+            border-radius: 30px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>bonjour remplit le formulaire</h1>
+    <br>
+    <form action="https://coursdetorah.tk/">
+    <input type="text" placeholder="votre prénom">
+    <br>
+    <input type="text" placeholder="votre nom">
+    <br>
+    <input type="email" placeholder="votre adresse mail">
+    <br>
+    <input type="tel" placeholder="votre n de téléphone ">
+    <br>
+    <input type="number" placeholder="0">
+    <br>
+    <select name="" id="">
+     <option value="">   <p>votre logiceil préfairait</p></option>
+    <option><a href="COURS.html">accuil</a></option>
+<option><a href="https://coursdetorah.tk/">cours de torah</a></option>
+<option><a href="https://www.youtube.com/">youtube</a></option>
+<option value=""><a href="https://www.torah-box.com/">torah-box</a></option>
+<option value=""><a href="https://www.torah-box.com/radio/">torah-box radio</a></option>
+</select>
+    <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br>
+    <button style="color:blueviolet; background-color: seashell; border: whitesmoke 10px solid; border-radius: 30px;">réserver</button>
+</form>
+</body>
+</html>
