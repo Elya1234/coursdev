@@ -98,21 +98,42 @@ a:hover {
             border-radius: 30px;
             color: red;
         }
+        [required]{
+            color: gray;
+            background-color: black;
+        }
+        :required {
+   border: 10px solid #000000;
+}
+select{
+    color: gray;
+    background-color: #000000;
+    border: 10px solid #000000;
+}
+textarea{
+    color: gray;
+    background-color: #000000;
+    border: 10px solid #000000;
+}
+#la{
+    color: gray;
+}
+
     </style>
 </head>
 <body>
     <h1>bonjour remplit le formulaire</h1>
     <br>
     <form action="https://coursdetorah.tk/">
-    <input type="text" placeholder="votre prénom">
+    <input type="text" placeholder="votre prénom" required>
     <br>
-    <input type="text" placeholder="votre nom">
+    <input type="text" placeholder="votre nom" required>
     <br>
-    <input type="email" placeholder="votre adresse mail">
+    <input type="email" placeholder="votre adresse mail" required>
     <br>
-    <input type="tel" placeholder="votre n de téléphone ">
+    <input type="tel" placeholder="votre n de téléphone " required>
     <br>
-    <input type="number" placeholder="0">
+    <input type="number" placeholder="0" required>
     <br>
     <select name="" id="">
      <option value="">   <p>votre logiceil préfairait</p></option>
@@ -122,8 +143,10 @@ a:hover {
 <option value=""><a href="https://www.torah-box.com/">torah-box</a></option>
 <option value=""><a href="https://www.torah-box.com/radio/">torah-box radio</a></option>
 </select>
+<br>
+<label for="textarea" id="la">commentaire:</label>
     <br>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="" id="" placeholder="commentaire:" cols="30" rows="2" style="border:gray 3px solid ;"></textarea>
     <br>
     <button style="color:blueviolet; background-color: seashell; border: whitesmoke 10px solid; border-radius: 30px;">réserver</button>
 </form>
